@@ -34,7 +34,7 @@
     
                 <!-- NavBar -->
                 <div id="nav">
-                    <i v-for="(item, index) in pics" :class="(index == c) ? 'active' : ' '" class="far fa-dot-circle" @click="picSwitch(index)"></i>
+                    <i v-for="(item, index) in pics" :class="(index == c) ? 'active' : ''" class="far fa-dot-circle" @click="c = index"></i>
                 </div>
                 <!-- /NavBar -->
             </div>

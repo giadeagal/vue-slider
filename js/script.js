@@ -27,8 +27,8 @@ const app = new Vue (
                     this.c--;
                 }
             },
-            picSwitch(index) {
-                this.c == index;
+            switch(x) {
+                this.c == x;
             }
         }
     }
