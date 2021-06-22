@@ -72,9 +72,13 @@ body {
     font-size: 2rem;
 }
 
+#nav > i.active {
+    color: greenyellow;
+}
+
 #nav > i:hover {
-    color:greenyellow;
     cursor:pointer;
+    transform: scale(1.2);
 }
 
 #nav > i:not(:last-of-type) {
