@@ -15,29 +15,26 @@
         <div id="app">
             <div class="wrapper">
                 <!-- Pulsante prev -->
-                <div id="prev" class="arrows">
+                <div id="prev" class="arrows" @click="prev">
                     <i class="fas fa-arrow-circle-left"></i>
                 </div>
                 <!-- /Pulsante prev -->
     
                 <!-- pics -->
                 <div id="pic">
-                    <img :src="pics[0]">
+                    <img :src="pics[c]">
                 </div>
                 <!-- /pics -->
     
                 <!-- Pulsante next -->
-                <div id="next" class="arrows">
+                <div id="next" class="arrows" @click="next">
                     <i class="fas fa-arrow-circle-right"></i>
                 </div>
                 <!-- /pulsante next -->
     
                 <!-- NavBar -->
                 <div id="nav">
-                    <i class="far fa-dot-circle"></i>
-                    <i class="far fa-dot-circle"></i>
-                    <i class="far fa-dot-circle"></i>
-                    <i class="far fa-dot-circle"></i>
+                    <i v-for="(item, index) in pics" :class="(index == c) ? 'active' : ' '" class="far fa-dot-circle" @click="picSwitch(index)"></i>
                 </div>
                 <!-- /NavBar -->
             </div>

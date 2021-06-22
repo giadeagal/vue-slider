@@ -51,6 +51,7 @@ body {
 .arrows > i:hover {
     color:teal;
     cursor: pointer;
+    transform: scale(1.1);
 }
 
 #nav {
@@ -78,7 +79,12 @@ body {
 
 #nav > i:hover {
     cursor:pointer;
-    transform: scale(1.2);
+    transform: scale(1.1);
+}
+
+#nav > i.active:hover {
+    color: greenyellow;
+    transform: none;
 }
 
 #nav > i:not(:last-of-type) {
